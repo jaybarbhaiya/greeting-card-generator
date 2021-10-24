@@ -17,3 +17,8 @@
 .App-Result-content {
 	background-color: lightpink;
 }
+
+#App-Result-Image {
+	height: 500px;
+	width: 200px;
+}

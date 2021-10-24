@@ -7,17 +7,15 @@ function UserInput() {
 	var getFile = (oEvent) => {
 		const input = oEvent.target;
 		if ("files" in input && input.files.length) {
-			placeFileContent(
-				document.querySelector("#App-Result-content"),
-				input.files[0]
-			);
+			placeFileContent(input.files[0]);
 		}
 	};
 
-	var placeFileContent = (target, file) => {
+	var placeFileContent = (file) => {
 		readFileContent(file)
 			.then((content) => {
-				target.value = content;
+				const oTargetImage = document.querySelector("#App-Result-Image");
+				oTargetImage.setAttribute("src", content);
 			})
 			.catch((error) => console.log(error));
 	};
