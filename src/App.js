@@ -6,13 +6,11 @@ function App() {
 	return (
 		<div className="App">
 			<div className="App-content">
-				<div className="App-Input-content">
-					<UserInput />
-				</div>
+				<UserInput />
 
+				<h3>Result content</h3>
 				<div className="App-Result-content">
-					<h3>Result content</h3>
-					<img id="App-Result-Image"></img>
+					<img id="App-Result-Image" alt="Result"></img>
 				</div>
 			</div>
 		</div>

@@ -7,7 +7,8 @@
 
 .App-Input-content,
 .App-Result-content {
-	width: 100%;
+	resize: both;
+	overflow: hidden;
 }
 
 .App-Input-content {
@@ -19,6 +20,6 @@
 }
 
 #App-Result-Image {
-	height: 500px;
-	width: 200px;
+	height: 100%;
+	width: 100%;
 }

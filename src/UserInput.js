@@ -37,6 +37,7 @@ function UserInput() {
 				id="contained-button-file"
 				type="file"
 				name="imageInput"
+				placeholder="Please select an image (.png or .jpeg)"
 				onInput={getFile}
 			/>
 			<label htmlFor="contained-button-file">
